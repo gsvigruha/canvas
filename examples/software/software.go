@@ -5,8 +5,8 @@ import (
 	"math"
 	"os"
 
-	"github.com/tfriedel6/canvas"
-	"github.com/tfriedel6/canvas/backend/softwarebackend"
+	"github.com/gsvigruha/canvas"
+	"github.com/gsvigruha/canvas/backend/softwarebackend"
 )
 
 func main() {

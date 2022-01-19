@@ -12,9 +12,9 @@ import (
 	"testing"
 
 	"github.com/go-gl/gl/v3.2-core/gl"
-	"github.com/tfriedel6/canvas"
-	"github.com/tfriedel6/canvas/backend/softwarebackend"
-	"github.com/tfriedel6/canvas/sdlcanvas"
+	"github.com/gsvigruha/canvas"
+	"github.com/gsvigruha/canvas/backend/softwarebackend"
+	"github.com/gsvigruha/canvas/sdlcanvas"
 )
 
 var usesw = false

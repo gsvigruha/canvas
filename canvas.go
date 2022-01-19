@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/golang/freetype/truetype"
-	"github.com/tfriedel6/canvas/backend/backendbase"
+	"github.com/gsvigruha/canvas/backend/backendbase"
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"
 )

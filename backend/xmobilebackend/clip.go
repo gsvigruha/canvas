@@ -3,7 +3,7 @@ package xmobilebackend
 import (
 	"unsafe"
 
-	"github.com/tfriedel6/canvas/backend/backendbase"
+	"github.com/gsvigruha/canvas/backend/backendbase"
 	"golang.org/x/mobile/gl"
 )
 

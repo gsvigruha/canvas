@@ -4,7 +4,7 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/tfriedel6/canvas/backend/backendbase"
+	"github.com/gsvigruha/canvas/backend/backendbase"
 )
 
 func triangleLR(tri []backendbase.Vec, y float64) (l, r float64, outside bool) {

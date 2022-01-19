@@ -8,7 +8,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/tfriedel6/canvas/backend/goglbackend/gl"
+	"github.com/gsvigruha/canvas/backend/goglbackend/gl"
 )
 
 type shaderProgram struct {

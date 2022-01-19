@@ -1,4 +1,4 @@
-# Go canvas [![GoDoc](https://godoc.org/github.com/tfriedel6/canvas?status.svg)](https://godoc.org/github.com/tfriedel6/canvas)
+# Go canvas [![GoDoc](https://godoc.org/github.com/gsvigruha/canvas?status.svg)](https://godoc.org/github.com/gsvigruha/canvas)
 
 Canvas is a pure Go library that provides drawing functionality as similar as possible to the HTML5 canvas API. It has nothing to do with HTML or Javascript, the functions are just made to be approximately the same.
 
@@ -44,7 +44,7 @@ package main
 import (
 	"math"
 
-	"github.com/tfriedel6/canvas/sdlcanvas"
+	"github.com/gsvigruha/canvas/sdlcanvas"
 )
 
 func main() {

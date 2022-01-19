@@ -3,8 +3,8 @@ package canvasandroidexample
 import (
 	"math"
 
-	"github.com/tfriedel6/canvas"
-	"github.com/tfriedel6/canvas/backend/goglbackend"
+	"github.com/gsvigruha/canvas"
+	"github.com/gsvigruha/canvas/backend/goglbackend"
 )
 
 var cv *canvas.Canvas

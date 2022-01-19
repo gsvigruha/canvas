@@ -4,7 +4,7 @@ import (
 	"image"
 	"math"
 
-	"github.com/tfriedel6/canvas/backend/backendbase"
+	"github.com/gsvigruha/canvas/backend/backendbase"
 )
 
 func (cv *Canvas) drawShadow(pts []backendbase.Vec, mask *image.Alpha, canOverlap bool) {

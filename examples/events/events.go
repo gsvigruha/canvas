@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/tfriedel6/canvas/sdlcanvas"
+	"github.com/gsvigruha/canvas/sdlcanvas"
 )
 
 type circle struct {

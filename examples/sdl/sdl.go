@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/go-gl/gl/v3.2-core/gl"
-	"github.com/tfriedel6/canvas"
-	"github.com/tfriedel6/canvas/backend/goglbackend"
+	"github.com/gsvigruha/canvas"
+	"github.com/gsvigruha/canvas/backend/goglbackend"
 	"github.com/veandco/go-sdl2/sdl"
 )
 
