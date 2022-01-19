@@ -34,6 +34,7 @@ type Canvas struct {
 	fontTriCache  map[*Font]*fontTriCache
 
 	shadowBuf []backendbase.Vec
+	imagePatterns map[interface{}]*ImagePattern
 }
 
 type drawState struct {
@@ -147,6 +148,7 @@ func New(backend backendbase.Backend) *Canvas {
 		fontCtxs:      make(map[fontKey]*frCache),
 		fontPathCache: make(map[*Font]*fontPathCache),
 		fontTriCache:  make(map[*Font]*fontTriCache),
+		imagePatterns: make(map[interface{}]*ImagePattern),
 	}
 	cv.state.lineWidth = 1
 	cv.state.lineAlpha = 1
@@ -205,8 +207,6 @@ func (cv *Canvas) SetStrokeStyle(value ...interface{}) {
 	cv.state.stroke = cv.parseStyle(value...)
 }
 
-var imagePatterns = make(map[interface{}]*ImagePattern)
-
 func (cv *Canvas) parseStyle(value ...interface{}) drawStyle {
 	var style drawStyle
 	if len(value) == 1 {
@@ -230,10 +230,10 @@ func (cv *Canvas) parseStyle(value ...interface{}) drawStyle {
 	if len(value) == 1 {
 		switch v := value[0].(type) {
 		case *Image, image.Image, string:
-			if _, ok := imagePatterns[v]; !ok {
-				imagePatterns[v] = cv.CreatePattern(v, Repeat)
+			if _, ok := cv.imagePatterns[v]; !ok {
+				cv.imagePatterns[v] = cv.CreatePattern(v, Repeat)
 			}
-			style.imagePattern = imagePatterns[v]
+			style.imagePattern = cv.imagePatterns[v]
 		}
 	}
 	return style
